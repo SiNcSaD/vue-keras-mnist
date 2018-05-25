@@ -32,7 +32,7 @@ export default {
   },
   created () {
     this.model = new window.KerasJS.Model({
-      filepath: process.env.NODE_ENV === 'production' ? '/vue-mnist-2/dist/static/mnist_cnn.bin' : '/static/mnist_cnn.bin',
+      filepath: process.env.NODE_ENV === 'production' ? '/vue-keras-mnist/dist/static/mnist_cnn.bin' : '/static/mnist_cnn.bin',
       gpu: true,
       transferLayerOutputs: true
     })
